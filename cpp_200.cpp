@@ -5,19 +5,15 @@ using namespace std;
 
 int main(int argc, char* argv[] )
 {
-    char character = 'C';
-    int integer = 100;
-    double precision = 3.14159;
-    bool is_true = true;
-    string word = "Hello World";
+    int x = 10;
+    int y = 1;
 
-    cout << "char : " << character << endl;
-    cout << "int : " << integer << endl;
-    cout << "double : " << precision << endl;
-	cout << "bool : " << is_true << endl;
-	cout << "string : " << word << endl;
+    if (x > y)
+        cout << "x는 y보다 큽니다." << endl;
+    else
+        cout << "x는 y보다 작습니다." << endl;
 
     return 0;
 }
 
-// 007 - 자료형 이해하기(char, int, double, bool, string)
+// 008 - 조건문 배우기(if ~ else)
