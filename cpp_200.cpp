@@ -1,28 +1,23 @@
 ﻿#include <iostream>
+#include<string>
+
 using namespace std;
 
 int main(int argc, char* argv[] )
 {
-    int two = 2;
-    int eight = 8;
-    int sum1 = 2;
-    int sum2 = 2;
+    char character = 'C';
+    int integer = 100;
+    double precision = 3.14159;
+    bool is_true = true;
+    string word = "Hello World";
 
-    sum1 = sum1 + two;
-    sum2 += eight;
-
-    cout << "sum1 = " << sum1 << endl;
-    cout << "sum2 = " << sum2 << endl;
-
-    sum1 = 2;
-    sum2 = 8;
-    sum1 *= two;
-    sum2 /= eight;
-
-    cout << "sum1 = " << sum1 << endl;
-    cout << "sum2 = " << sum2 << endl;
+    cout << "char : " << character << endl;
+    cout << "int : " << integer << endl;
+    cout << "double : " << precision << endl;
+	cout << "bool : " << is_true << endl;
+	cout << "string : " << word << endl;
 
     return 0;
 }
 
-// 006 - 사칙연산 축약하기 ( +, -, *, /)
+// 007 - 자료형 이해하기(char, int, double, bool, string)
