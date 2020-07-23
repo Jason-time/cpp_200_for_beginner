@@ -4,20 +4,18 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	int sum1 = 0;
-	int sum2 = 0;
+	const int kArraySize = 3;
 
-	int one = 1;
-	int two = 2;
+	int founding[kArraySize];
+	founding[0] = 918;
+	founding[1] = 1392;
+	founding[2] = 1919;
 
-	for (int i = 0;i < 5;i++) {
-		sum1 += one;
-		sum2 += two;
-	}
-
-	cout << "합산 결과 : " << sum1 << ", " << sum2 << endl;
+	cout << "고려 건국 연도 : " << founding[0] << endl;
+	cout << "조선 건국 연도 : " << founding[1] << endl;
+	cout << "한국 건국 연도 : " << founding[2] << endl;
 
 	return 0;
 }
 
-// 009 - 순환문 배우기 (for)
+// 010 - 배열 배우기 ([크기])
