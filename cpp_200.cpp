@@ -2,20 +2,21 @@
 
 using namespace std;
 
+void Minus(const int x, const int y) {
+	cout << "x - y = " << x - y << endl;
+}
+
+int Plus(const int x, const int y) {
+	return x + y;
+}
+
 int main(int argc, char* argv[])
 {
-	const int kArraySize = 3;
+	Minus(10, 5);
 
-	int founding[kArraySize];
-	founding[0] = 918;
-	founding[1] = 1392;
-	founding[2] = 1919;
-
-	cout << "고려 건국 연도 : " << founding[0] << endl;
-	cout << "조선 건국 연도 : " << founding[1] << endl;
-	cout << "한국 건국 연도 : " << founding[2] << endl;
+	cout << "x + y = " << Plus(2, 6) << endl;
 
 	return 0;
 }
 
-// 010 - 배열 배우기 ([크기])
+// 011 - 함수 배우기 ( () )
