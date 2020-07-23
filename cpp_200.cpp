@@ -3,12 +3,12 @@ using namespace std;
 
 int main(int argc, char* argv[] )
 {
-    int one = 1;
-    int two = 2;
-    int sum = one + two;
+    const int GREATE_VICTORY_SALSU = 612;
+    const int GREATE_VICTORY_GWIJU = 1019;
 
-    cout << "1 + 2 = " << sum << endl;
+    cout << "고구려 살수대첩 연도 : " << GREATE_VICTORY_SALSU << "년" << endl;
+    cout << "고려 귀주대첩 연도 : " << GREATE_VICTORY_GWIJU << "년" << endl;
     return 0;
 }
 
-// 003 - 변수 배우기
+// 004 - 상수 배우기(const)
