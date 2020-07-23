@@ -3,19 +3,26 @@ using namespace std;
 
 int main(int argc, char* argv[] )
 {
-    int one = 1;
     int two = 2;
-    int three = 3;
-    int four = 4;
+    int eight = 8;
+    int sum1 = 2;
+    int sum2 = 2;
 
-    cout << "1 + 3 = " << one + three << endl;
-    cout << "4 - 2 = " << four - two << endl;
-    cout << "2 * 3 = " << two * three << endl;
-    cout << "4 / 2 = " << four / two << endl;
+    sum1 = sum1 + two;
+    sum2 += eight;
 
-    cout << "2 + 3 * 4 = " << two + three * four  << endl;
-    cout << "1 + 4 / 2 = " << one + four / two << endl;
+    cout << "sum1 = " << sum1 << endl;
+    cout << "sum2 = " << sum2 << endl;
+
+    sum1 = 2;
+    sum2 = 8;
+    sum1 *= two;
+    sum2 /= eight;
+
+    cout << "sum1 = " << sum1 << endl;
+    cout << "sum2 = " << sum2 << endl;
+
     return 0;
 }
 
-// 005 - 사칙연산 배우기(+, -, *, /)
+// 006 - 사칙연산 축약하기 ( +, -, *, /)
