@@ -2,25 +2,19 @@
 
 using namespace std;
 
-int x = 10;
-
-int Func1() {
-	int y = x + 10;
-	return y;
-}
-
-int Func2() {
-	int x = 100;
-	return x;
-}
-
 int main(int argc, char* argv[])
 {
-	cout << "y = " << Func1() << endl;
-	cout << "x = " << Func2() << endl;
-	cout << "x = " << x << endl;
+	char ch1 = 'c';
+	char ch2 = 200;
 
+	unsigned char ch3 = 'c';
+	unsigned char ch4 = 200;
+
+	printf("char ch1 = %c, %d\n", ch1, ch1);
+	printf("char ch2 = %c, %d\n", ch2, ch2);
+	printf("char ch3 = %c, %d\n", ch3, ch3);
+	printf("char ch4 = %c, %d\n", ch4, ch4);
 	return 0;
 }
 
-// 015 - 스코핑룰 이해하기 ( {} )
+// 016 - 문자형 변수 이해하기 (char) 
