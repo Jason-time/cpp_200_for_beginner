@@ -4,28 +4,15 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	int x = 10;
-	int y = 20;
+	int x = 1;
+	int y = 2;
+	int z = 0;
 
-	bool is_x = true;
-	bool is_y = false;
+	z = x > y ? x : y;
 
-	if (is_x == true && is_y == true)
-		cout << "is_x && is_y = " << "true" << endl;
-	else
-		cout << "is_x && is_y = " << "false" << endl;
-
-	if (x == 10 || is_x == false)
-		cout << "x가 10이거나 is_x가 true입니다." << endl;
-	else
-		cout << "x는 10이 아니며 is_x도 false가 아닙니다." << endl;
-
-	if (!is_y)
-		cout << "is_y 원래 값은 false 입니다." << endl;
-	else
-		cout << "is_y 원래 값은 true입니다." << endl;
+	cout << "x와 y중 더 큰 값은 : " << z << endl;
 
 	return 0;
 }
 
-// 025 - 논리 연산자 이해하기( and(&&), or(||), not(!))
+// 026 - 조건부 삼항 연산자 이해하기(? :) 
