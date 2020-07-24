@@ -5,13 +5,25 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	double pi_d = 3.14;
-	float pi_f = 3.14f;
+	int x = 10;
+	int y = 6;
 
-	cout << "pi_d = " << pi_d << endl;
-	cout << "pi_f = " << pi_f << endl;
+	bool is_true = false;
 
+	if (x > y) {
+		is_true = true;
+	}
+	else {
+		is_true = false;
+	}
+
+	if (is_true == true) {
+		cout << "x는 y보다 큽니다" << endl;
+	}
+	else {
+		cout << "x는 y보다 작습니다" << endl;
+	}
 	return 0;
 }
 
-// 019 - 실수형 변수 이해하기(double)
+// 020 - 논리형 변수 이해하기(bool)
