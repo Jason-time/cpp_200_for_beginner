@@ -2,19 +2,37 @@
 
 using namespace std;
 
-class Temp {
-	int no;
-	bool in_on;
-};
-
 int main(int argc, char* argv[])
 {
-	cout << "char 크기 : " << sizeof('p') << endl;
-	cout << "int 크기 : " << sizeof(10) << endl;
-	cout << "double 크기 : " << sizeof(10.0) << endl;
-	cout << "클래스 크기 : " << sizeof(Temp) << endl;
+	int number1 = 100;
+	int number2 = 6;
 
+	if (number1 < number2)
+		cout << "number2가 더 큽니다." << endl;
+	else if (number1 > number2)
+		cout << "number1이 더 큽니다." << endl;
+	else
+		cout << "number1과 number2는 같습니다." << endl;
+
+	if (number2 < 7) {
+		if (number2 > 3) {
+			if (number2 == 4)
+				cout << "number2는 4입니다." << endl;
+			else if (number2 == 5)
+				cout << "number2는 5입니다." << endl;
+			else
+				cout << "number2는 6입니다." << endl;
+		}
+		else {
+			if (number2 == 3)
+				cout << "number2는 3입니다." << endl;
+			else if (number2 == 2)
+				cout << "number2는 2입니다." << endl;
+			else
+				cout << "number2는 1이하 입니다." << endl;
+		}
+	}
 	return 0;
 }
 
-// 031 - 자료형의 크기 이해하기 ( sizeof)
+// 032 - 중첩 조건문 이해하기( if~else if~else)
