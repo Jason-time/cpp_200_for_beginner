@@ -1,24 +1,32 @@
 ﻿#include <iostream>
 
 using namespace std;
-// 출력하지 않을 코드
-/*
-void Minus(const int x, const int y) {
-	cout << "x - y = " << x - y << endl;
+
+namespace silla {
+	int year = 935;
+	void CentralArea() {
+		cout << "경상도" << endl;
+	}
 }
 
-int Plus(const int x, const int y) {
-	return x + y;
+namespace baekjae{
+	int year = 660;
+	void CentralArea() {
+		cout << "충청도" << endl;
+	}
 }
+using namespace silla;
+using namespace baekjae;
 
-*/
 int main(int argc, char* argv[])
 {
-	//Minus(10, 5);
-
-//	cout << "x + y = " << Plus(2, 6) << endl;
-
+	cout << "신라 중심지 : ";
+	silla::CentralArea();
+	cout << "신라 멸망연도 : " << silla::year << endl;
+	cout << "백제 중심지 : ";
+	baekjae::CentralArea();
+	cout << "백제 멸망연도 : " << baekjae::year << endl;
 	return 0;
 }
 
-// 012 - 주석 배우기 ( //, /* */ )
+// 013 - 네임스페이스 배우기 ( namespace )
