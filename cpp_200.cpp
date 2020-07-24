@@ -5,13 +5,15 @@ using namespace std;
 int main(int argc, char* argv[])
 {
 	int x = 1;
-	int y = -1;
-	int z = -2;
 
-	cout << "1 + (-1) = " << x + y << endl;
-	cout << "-1 + -2 = " << y + z << endl;
-
+	cout << "x = " << x++ << endl;
+	cout << "x = " << x++ << endl;
+	cout << "x = " << ++x << endl;
+	cout << "x = " << x-- << endl;
+	cout << "x = " << x-- << endl;
+	cout << "x = " << --x << endl;
+	
 	return 0;
 }
 
-// 022 - 부호 연산자 이해하기(+,-)
+// 023 - 증감 연산자 이해하기(++, --)
