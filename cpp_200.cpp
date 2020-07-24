@@ -5,25 +5,20 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	int x = 10;
-	int y = 6;
+	int x = 1;
+	int y = 9;
 
-	bool is_true = false;
+	int z = x + y;
 
-	if (x > y) {
-		is_true = true;
-	}
-	else {
-		is_true = false;
-	}
+	double i = 1.2;
+	double j = 2.3;
 
-	if (is_true == true) {
-		cout << "x는 y보다 큽니다" << endl;
-	}
-	else {
-		cout << "x는 y보다 작습니다" << endl;
-	}
+	double k = i + j;
+
+	cout << "x + y = " << z << endl;
+	cout << "i + y = " << k << endl;
+
 	return 0;
 }
 
-// 020 - 논리형 변수 이해하기(bool)
+// 021 - 대입 연산자 이해하기(=)
