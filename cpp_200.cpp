@@ -4,15 +4,24 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
 
-	int data[10] = { 5,19,76,3,10, 89,54,43,2,17 };
+	int number = 3;
 
-	for (int i = 0;i < 10;i++) {
-		if (data[i] % 2 == 0)
-			cout << i << " : " << data[i] << "는 짝수 입니다." << endl;
-		else
-			cout << i << " : " << data[i] << "는 홀수입니다." << endl;
+	switch (number) {
+	case 1:
+		cout << "number 값은 1입니다." << endl;
+		break; 
+	case 2:
+		cout << "number 값은 2입니다." << endl;
+		break;
+	case 3:
+		cout << "number 값은 3입니다." << endl;
+		break;
+	default:
+		cout << "number 값을 알 수 없습니다." << endl;
+		break;
 	}
+	
 	return 0;
 }
 
-// 036 - 순환문으로 홀수, 짝수 찾기 (for)
+// 037 - 조건 선택문 이해하기(switch~case~default)
