@@ -1,32 +1,20 @@
 ﻿#include <iostream>
+#include <vector>
 
 using namespace std;
 
-namespace silla {
-	int year = 935;
-	void CentralArea() {
-		cout << "경상도" << endl;
-	}
-}
-
-namespace baekjae{
-	int year = 660;
-	void CentralArea() {
-		cout << "충청도" << endl;
-	}
-}
-using namespace silla;
-using namespace baekjae;
-
 int main(int argc, char* argv[])
 {
-	cout << "신라 중심지 : ";
-	silla::CentralArea();
-	cout << "신라 멸망연도 : " << silla::year << endl;
-	cout << "백제 중심지 : ";
-	baekjae::CentralArea();
-	cout << "백제 멸망연도 : " << baekjae::year << endl;
+	vector<int> exam;
+	exam.push_back(10);
+	exam.push_back(20);
+	exam.push_back(30);
+
+	for (int i = 0, size = exam.size();i < size;i++) {
+		cout << "벡터 값 : " << exam.at(i) << endl;
+	}
+
 	return 0;
 }
 
-// 013 - 네임스페이스 배우기 ( namespace )
+// 014 - #include 배우기
