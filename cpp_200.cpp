@@ -5,15 +5,13 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	int positive = 100;
-	int negative = -200;
-	int ascii_value = 'A';
+	double pi_d = 3.14;
+	float pi_f = 3.14f;
 
-	cout << "양수 값 : " << positive << endl;
-	cout << "음수 값 : " << negative << endl;
-	cout << "아스키 값 : " << ascii_value << endl;
+	cout << "pi_d = " << pi_d << endl;
+	cout << "pi_f = " << pi_f << endl;
 
 	return 0;
 }
 
-// 018 - 정수형 변수 이해하기 (int)
+// 019 - 실수형 변수 이해하기(double)
