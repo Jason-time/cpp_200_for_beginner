@@ -1,19 +1,32 @@
 ﻿#include <iostream>
+#include <string>
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
-	int x = 1;
+	string publisher = "한국출판사";
+	string language = "C++";
 
-	cout << "x = " << x++ << endl;
-	cout << "x = " << x++ << endl;
-	cout << "x = " << ++x << endl;
-	cout << "x = " << x-- << endl;
-	cout << "x = " << x-- << endl;
-	cout << "x = " << --x << endl;
+	int x = 10;
+	int y = 10;
+
+	if (publisher != language)
+		cout << "두 문장은 같지 않습니다." << endl;
+	else
+		cout << "두 문장은 같습니다." << endl;
+
+	if (x >= y)
+		cout << "x는 y보다 크거나 같습니다." << endl;
+	else
+		cout << "x는 y보다 크거나 같지 않습니다." << endl;
+
+	if (x <= 20)
+		cout << "x는 20보다 작거나 같습니다." << endl;
+	else
+		cout << "x는 20보다 작거나 같습니다." << endl;
 	
 	return 0;
 }
 
-// 023 - 증감 연산자 이해하기(++, --)
+// 024 - 관계 연산자 이해하기(==, !=, <, <=, >, >=)
