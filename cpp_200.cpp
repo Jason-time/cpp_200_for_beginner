@@ -2,24 +2,19 @@
 
 using namespace std;
 
+class Temp {
+	int no;
+	bool in_on;
+};
+
 int main(int argc, char* argv[])
 {
-	int number1 = 65;
-	double number2 = 23.4;
-
-	int number3 = int(number2);
-	double number4 = double(number1 / number2);
-
-	char ch = char(number1);
-
-	cout << "number1 : " << number1 << endl;
-	cout << "number2 : " << number2 << endl;
-	cout << "number3 : " << number3 << endl;
-	cout << "number4 : " << number4 << endl;
-	cout << "ch : " << ch << endl;
-
+	cout << "char 크기 : " << sizeof('p') << endl;
+	cout << "int 크기 : " << sizeof(10) << endl;
+	cout << "double 크기 : " << sizeof(10.0) << endl;
+	cout << "클래스 크기 : " << sizeof(Temp) << endl;
 
 	return 0;
 }
 
-// 030 - 명시적 변환 이해하기 ( () )
+// 031 - 자료형의 크기 이해하기 ( sizeof)
