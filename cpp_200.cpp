@@ -1,20 +1,24 @@
 ﻿#include <iostream>
+#include <string>
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
-	int number = 7;
+	string str = "The JIn state was formed in southern Korea by the 3rd century BC";
 
-	for (int i = 0;i < 10;i++) {
-		if (i % 3 == 0)
-			continue;
-		else if (i == number)
-			break;
-		else
-			cout << "현재 i 값 : " << i << endl;
+	char find = 'a';
+
+	int size = str.size();
+	int count = 0;
+
+	for (int i = 0;i < size;i++) {
+		if (str[i] == find)
+			count++;
 	}
+	cout << "문장의 a 갯수는 " << count << "개 입니다." << endl;
+
 	return 0;
 }
 
-// 034 - 중첩 순환문 이해하기(for~continue~break)
+// 035 - 순환문으로 특정 문자 갯수 구하기(for)
