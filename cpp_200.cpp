@@ -1,20 +1,19 @@
 ﻿#include <iostream>
+#include <string>
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
-	char ch1 = 'c';
-	char ch2 = 200;
+	int positive = 100;
+	int negative = -200;
+	int ascii_value = 'A';
 
-	unsigned char ch3 = 'c';
-	unsigned char ch4 = 200;
+	cout << "양수 값 : " << positive << endl;
+	cout << "음수 값 : " << negative << endl;
+	cout << "아스키 값 : " << ascii_value << endl;
 
-	printf("char ch1 = %c, %d\n", ch1, ch1);
-	printf("char ch2 = %c, %d\n", ch2, ch2);
-	printf("char ch3 = %c, %d\n", ch3, ch3);
-	printf("char ch4 = %c, %d\n", ch4, ch4);
 	return 0;
 }
 
-// 016 - 문자형 변수 이해하기 (char) 
+// 018 - 정수형 변수 이해하기 (int)
