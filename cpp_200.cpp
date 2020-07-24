@@ -1,20 +1,26 @@
 ﻿#include <iostream>
-#include <vector>
 
 using namespace std;
 
+int x = 10;
+
+int Func1() {
+	int y = x + 10;
+	return y;
+}
+
+int Func2() {
+	int x = 100;
+	return x;
+}
+
 int main(int argc, char* argv[])
 {
-	vector<int> exam;
-	exam.push_back(10);
-	exam.push_back(20);
-	exam.push_back(30);
-
-	for (int i = 0, size = exam.size();i < size;i++) {
-		cout << "벡터 값 : " << exam.at(i) << endl;
-	}
+	cout << "y = " << Func1() << endl;
+	cout << "x = " << Func2() << endl;
+	cout << "x = " << x << endl;
 
 	return 0;
 }
 
-// 014 - #include 배우기
+// 015 - 스코핑룰 이해하기 ( {} )
