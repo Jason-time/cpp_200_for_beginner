@@ -4,18 +4,22 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	int x = 2;
-	double y = 4.4;
+	int number1 = 65;
+	double number2 = 23.4;
 
-	int i = static_cast<int>(y / x);
-	int j = (int)y / x;
-	double k = y / x;
+	int number3 = int(number2);
+	double number4 = double(number1 / number2);
 
-	cout << "4.4 / 2 = (static_cast<int>)" << i << endl;
-	cout << "4.4 / 2 = (int) " << j << endl;
-	cout << "4.4 / 2 = " << k << endl;
+	char ch = char(number1);
+
+	cout << "number1 : " << number1 << endl;
+	cout << "number2 : " << number2 << endl;
+	cout << "number3 : " << number3 << endl;
+	cout << "number4 : " << number4 << endl;
+	cout << "ch : " << ch << endl;
+
 
 	return 0;
 }
 
-// 029 - 캐스트 연산자 이해하기(static_cast)
+// 030 - 명시적 변환 이해하기 ( () )
