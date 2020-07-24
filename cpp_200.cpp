@@ -1,38 +1,23 @@
 ﻿#include <iostream>
+#include <string>
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
 	int number1 = 100;
-	int number2 = 6;
-
-	if (number1 < number2)
-		cout << "number2가 더 큽니다." << endl;
-	else if (number1 > number2)
-		cout << "number1이 더 큽니다." << endl;
+	int number2 = 200;
+	int number3 = 300;
+	
+	if (number1 > number2 && number1 > number3)
+		cout << "가장 큰 수 number1 : " << number1 << endl;
+	else if (number2 > number1 && number2 > number3)
+		cout << "가장 큰 수 number2 : " << number2 << endl;
+	else if (number3 > number1 && number3 > number2)
+		cout << "가장 큰 수 number3 : " << number3 << endl;
 	else
-		cout << "number1과 number2는 같습니다." << endl;
-
-	if (number2 < 7) {
-		if (number2 > 3) {
-			if (number2 == 4)
-				cout << "number2는 4입니다." << endl;
-			else if (number2 == 5)
-				cout << "number2는 5입니다." << endl;
-			else
-				cout << "number2는 6입니다." << endl;
-		}
-		else {
-			if (number2 == 3)
-				cout << "number2는 3입니다." << endl;
-			else if (number2 == 2)
-				cout << "number2는 2입니다." << endl;
-			else
-				cout << "number2는 1이하 입니다." << endl;
-		}
-	}
+		cout << "찾을 수 없습니다." << endl;
 	return 0;
 }
 
-// 032 - 중첩 조건문 이해하기( if~else if~else)
+// 033 - 중첩 조건문으로 가장 큰 수 찾기(if~else)
