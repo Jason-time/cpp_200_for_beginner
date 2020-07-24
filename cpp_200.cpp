@@ -1,23 +1,20 @@
 ﻿#include <iostream>
-#include <string>
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
-	int number1 = 100;
-	int number2 = 200;
-	int number3 = 300;
-	
-	if (number1 > number2 && number1 > number3)
-		cout << "가장 큰 수 number1 : " << number1 << endl;
-	else if (number2 > number1 && number2 > number3)
-		cout << "가장 큰 수 number2 : " << number2 << endl;
-	else if (number3 > number1 && number3 > number2)
-		cout << "가장 큰 수 number3 : " << number3 << endl;
-	else
-		cout << "찾을 수 없습니다." << endl;
+	int number = 7;
+
+	for (int i = 0;i < 10;i++) {
+		if (i % 3 == 0)
+			continue;
+		else if (i == number)
+			break;
+		else
+			cout << "현재 i 값 : " << i << endl;
+	}
 	return 0;
 }
 
-// 033 - 중첩 조건문으로 가장 큰 수 찾기(if~else)
+// 034 - 중첩 순환문 이해하기(for~continue~break)

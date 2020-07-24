@@ -770,3 +770,25 @@ int main(int argc, char* argv[])
 }
 
 // 033 - 중첩 조건문으로 가장 큰 수 찾기(if~else)
+
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char* argv[])
+{
+	int number = 7;
+
+	for (int i = 0;i < 10;i++) {
+		if (i % 3 == 0)
+			continue;
+		else if (i == number)
+			break;
+		else
+			cout << "현재 i 값 : " << i << endl;
+	}
+	return 0;
+}
+
+// 034 - 중첩 순환문 이해하기(for~continue~break)
