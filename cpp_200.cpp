@@ -1,32 +1,31 @@
 ﻿#include <iostream>
-#include <string>
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
-	string publisher = "한국출판사";
-	string language = "C++";
-
 	int x = 10;
-	int y = 10;
+	int y = 20;
 
-	if (publisher != language)
-		cout << "두 문장은 같지 않습니다." << endl;
-	else
-		cout << "두 문장은 같습니다." << endl;
+	bool is_x = true;
+	bool is_y = false;
 
-	if (x >= y)
-		cout << "x는 y보다 크거나 같습니다." << endl;
+	if (is_x == true && is_y == true)
+		cout << "is_x && is_y = " << "true" << endl;
 	else
-		cout << "x는 y보다 크거나 같지 않습니다." << endl;
+		cout << "is_x && is_y = " << "false" << endl;
 
-	if (x <= 20)
-		cout << "x는 20보다 작거나 같습니다." << endl;
+	if (x == 10 || is_x == false)
+		cout << "x가 10이거나 is_x가 true입니다." << endl;
 	else
-		cout << "x는 20보다 작거나 같습니다." << endl;
-	
+		cout << "x는 10이 아니며 is_x도 false가 아닙니다." << endl;
+
+	if (!is_y)
+		cout << "is_y 원래 값은 false 입니다." << endl;
+	else
+		cout << "is_y 원래 값은 true입니다." << endl;
+
 	return 0;
 }
 
-// 024 - 관계 연산자 이해하기(==, !=, <, <=, >, >=)
+// 025 - 논리 연산자 이해하기( and(&&), or(||), not(!))
