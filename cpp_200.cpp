@@ -3,25 +3,20 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
-	int p = 0;
-	int n = 0;
-	int t = 0;
+	int num = 0;
+	cin >> num;
+	int offset = num;
 
-	for (int i = 1;i < 10;i++) {
-		p = 0;
-		n = 1;
-
-		for (int j = 1;j <= i;j++) {
-			cout << n << ", ";
-
-			t = n;
-			n += p;
-			p = t;
-
+	for (int i= 1, j = 0;i <= offset;i++, j = 0) {
+		for (int k = 1;k <= offset - i;k++)
+			cout << "  ";
+		while (j != 2 * i - 1) {
+			cout << "* ";
+			j++;
 		}
-	cout << std::endl;
+		cout << endl;
 	}
 	return 0;
 }
 
-// 041 - 반복문을 이용하여 피보나치 수열 출력하기 
+// 042 - 반복문을 이용하여 피라미드 출력하기
