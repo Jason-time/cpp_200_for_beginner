@@ -3,20 +3,21 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
-	int num = 0;
-	cin >> num;
-	int offset = num;
+	cout << "== 소수점 버리기 ==" << endl;
+	cout << "floor(1.1) : " << floor(1.1) << endl;
+	cout << "floor(-2.3) : " << floor(-2.3) << endl;
+	cout << "floor(40.5) : " << floor(40.5) << endl;
+	cout << "floor(-55.7) : " << floor(-55.7) << endl;
+	cout << "floor(100.9) : " << floor(100.9) << endl;
+	
+	cout << "== 소수점 올리기 ==" << endl;
+	cout << "ceil(1.1) : " << ceil(1.1) << endl;
+	cout << "ceil(-2.3) : " << ceil(-2.3) << endl;
+	cout << "ceil(40.5) : " << ceil(40.5) << endl;
+	cout << "ceil(-55.7) : " << ceil(-55.7) << endl;
+	cout << "ceil(100.9) : " << ceil(100.9) << endl;
 
-	for (int i= 1, j = 0;i <= offset;i++, j = 0) {
-		for (int k = 1;k <= offset - i;k++)
-			cout << "  ";
-		while (j != 2 * i - 1) {
-			cout << "* ";
-			j++;
-		}
-		cout << endl;
-	}
 	return 0;
 }
 
-// 042 - 반복문을 이용하여 피라미드 출력하기
+// 043 - 실수 소수점 버리기 올리기(floor, ceil)
