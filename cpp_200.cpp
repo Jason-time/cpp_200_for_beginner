@@ -3,16 +3,13 @@
 
 using namespace std; 
 int main(int argc, char* argv[]) {
-	string baekhap_war = "백합벌 전투 : 백제 왕자 부여창의 일기토로 유명한 전투";
+	string jinduk_name = "김승만";
+	string jinsung_name = "kim man";
 
-	int rtn = baekhap_war.find("부여창");
-
-	if (rtn > 0)
-		cout << "문자열을 찾았습니다. 위치는 " << rtn << "입니다." << endl;
-	else
-		cout << "문자열을 찾을 수 없습니다." << endl;
+	cout << "진덕여왕 이름 길이 : " << jinduk_name.length() << endl;
+	cout << "진성여왕 이름 길이 : " << jinsung_name.length() << endl;
 
 	return 0;
 }
 
-// 054 - 문자열 조회하기(find)
+// 055 - 문자열 길이 구하기(length)
