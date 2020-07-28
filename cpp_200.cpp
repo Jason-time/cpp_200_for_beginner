@@ -3,18 +3,12 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
-	double x = 5.7;
-	int div1 = static_cast<int>(x / 5);
-	double mod1 = x - 5 * static_cast<int>(x / 5);
-
-	int y = 10;
-	int div2 = static_cast<int>(y / 2);
-	double mod2 = y % 2;
-
-	cout << "5.7 / 5 = 몫 : " << div1 << ", 나머지 : " << mod1 << endl;
-	cout << "10 / 2 = 몫 : " << div2 << ", 나머지 : " << mod2 << endl;
+	cout << "4의 제곱근 : " << sqrt(4.0) << endl;
+	cout << "16의 제곱근 : " << sqrt(16) << endl;
+	cout << "64의 제곱근 : " << sqrt(64) << endl;
+	cout << "256의 제곱근 : " << sqrt(256.0) << endl;
 
 	return 0;
 }
 
-// 046 - 몫과 나머지 구하기(%)
+// 047 - 제곱근 구하기(sqrt)
