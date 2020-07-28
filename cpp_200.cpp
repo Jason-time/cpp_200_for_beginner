@@ -3,22 +3,14 @@
 
 using namespace std; 
 int main(int argc, char* argv[]) {
-	string king = "조선 세종";
-	string favorite1 = "고기";
-	string favorite2 = "야근";
+	string sentence = "i coding";
+	sentence.insert(2, "hate ");
+	cout << sentence << endl;
 
-	string king_info = "";
-
-	king_info += king;
-	king_info += "은 ";
-	king_info += favorite1;
-	king_info.append("와 ");
-	king_info.append(favorite2);
-	king_info.append("을 좋아했습니다.");
-
-	cout << king_info << endl;
+	sentence.insert(7, "or like ");
+	cout << sentence << endl;
 
 	return 0;
 }
 
-// 057 - 문자열 합치기(+=)
+// 058 - 문자열 중간에 문자열 추가하기(insert)
