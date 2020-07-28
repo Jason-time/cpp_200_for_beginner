@@ -1,22 +1,15 @@
-﻿#include <ctime>
-#include <iostream>
+﻿#include <iostream>
 
 using namespace std; 
 int main(int argc, char* argv[]) {
-	time_t start = time(NULL);
-	time_t finish = time(NULL);
+	string seven_war = "임진왜란";
+	string korea_war = "한국전쟁";
 
-	int pass_int = 2;
-
-	time(&start);
-	for (int i = 1;i < 10000;i++) {
-		for (int j = 1; j < 10000;j++)
-			pass_int += 1;
-	}
-
-	time(&finish);
-	cout << "1을 100억 번 더하는 시간 : " << difftime(finish, start) << "초 \n";
+	if (seven_war.compare(korea_war) != 0)
+		cout << "다른 문자열입니다.\n";
+	else
+		cout << "같은 문자열입니다.\n";
 	return 0;
 }
 
-// 052 - 지나간 시간 알아내기(time)
+// 053 - 문자열 비교하기(string.compare)
