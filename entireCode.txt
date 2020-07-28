@@ -1224,3 +1224,23 @@ int main(int argc, char* argv[]) {
 }
 
 // 053 - 문자열 비교하기(string.compare)
+
+
+#include <iostream>
+#include<string>
+
+using namespace std; 
+int main(int argc, char* argv[]) {
+	string baekhap_war = "백합벌 전투 : 백제 왕자 부여창의 일기토로 유명한 전투";
+
+	int rtn = baekhap_war.find("부여창");
+
+	if (rtn > 0)
+		cout << "문자열을 찾았습니다. 위치는 " << rtn << "입니다." << endl;
+	else
+		cout << "문자열을 찾을 수 없습니다." << endl;
+
+	return 0;
+}
+
+// 054 - 문자열 조회하기(find)
