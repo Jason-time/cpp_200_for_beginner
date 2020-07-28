@@ -1,18 +1,15 @@
 ﻿#include <iostream>
+#include<ctime>
 
 using namespace std;
 
 int main(int argc, char* argv[]) {
-	double x = 1.2345;
-	double div = 0.0;
-	double mod = 0.0;
+	srand(static_cast<unsigned int>(time(NULL)));
 
-	mod = modf(x, &div);
-
-	cout << "1.2345의 몫 : " << div << ", 나머지 : " << mod << endl;
-	
+	for (int i = 0;i < 5; i++)
+		cout << "난수 : " << rand() << endl;
 	return 0;
 
 }
 
-// 048 - 소수점 분리하기(modf)
+// 049 - 난수 생성하기(srand,rand)
