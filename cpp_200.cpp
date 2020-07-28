@@ -1,35 +1,20 @@
 ﻿#include <iostream>
-#include<ctime>
-#include<algorithm>
-#include<random>
-
+#define _CRT_SECURE_NO_WARNINGS
+#include <ctime>
 
 using namespace std;
 
 int main(int argc, char* argv[]) {
-	string str1 = "1a2b3c4d5e6f7g8h9i";
-	string str2 = "republic of korea";
-	int data1[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	time_t now = time(NULL);
+	tm* ptm = localtime(&now);
 
-	srand(static_cast<unsigned int>(time(NULL)));
+	char buffer[64];
+	strftime(buffer, 64, "예제 만드는 지금은 %Y년 %m월 %d일, %H시 %M분 %S초 입니다.(%p)\n", ptm);
 
-	random_shuffle(str1.begin(), str1.end());
-	random_shuffle(str2.begin(), str2.end());
-	random_shuffle(data1, data1 +4);
+	cout << buffer;
 
-	cout << "== str1 ==" << endl;
-	for (auto i : str1)
-		cout << i << ", ";
-
-	cout << endl << "== str2 ==" << endl;
-	for (auto i : str2)
-		cout << i << ", ";
-
-	cout << endl << "== data1 ==" << endl;
-	for (auto i : data1)
-		cout << i << ", ";
 	return 0;
 
 }
 
-// 050 - 무작위로 문자열과 배열 섞기(random_shuffle)
+// 051 - 날짜와 시간을 문자열로 변환하기(localtime) 실행 이 안 된 다. 
