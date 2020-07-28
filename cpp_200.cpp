@@ -1,27 +1,24 @@
 ﻿#include <iostream>
 #include<string>
-#include<algorithm>
 
 using namespace std; 
 int main(int argc, char* argv[]) {
-	string silla = "divided into the Three Kingdoms.";
-	string joseon = "Yi Seong-gye, established Joseon in 1392";
+	string king = "조선 세종";
+	string favorite1 = "고기";
+	string favorite2 = "야근";
 
-	transform(silla.begin(), silla.end(), silla.begin(), toupper);
-	transform(joseon.begin(), joseon.end(), joseon.begin(), tolower);
+	string king_info = "";
 
-	char lower_ch = 'g';
-	char upper_ch = 'B';
+	king_info += king;
+	king_info += "은 ";
+	king_info += favorite1;
+	king_info.append("와 ");
+	king_info.append(favorite2);
+	king_info.append("을 좋아했습니다.");
 
-	lower_ch = toupper(lower_ch);
-	upper_ch = tolower(upper_ch);
-
-	cout << "문자열 대문자로 변환 : " << silla << endl;
-	cout << "문자열 소문자로 변환 : " << joseon<< endl;
-	cout << "문자 대문자로 변환 : " << lower_ch<< endl;
-	cout << "문자 소문자로 변환 : " << upper_ch<< endl;
+	cout << king_info << endl;
 
 	return 0;
 }
 
-// 056 - 문자열 대소문자 변환하기(toupper, tolower)
+// 057 - 문자열 합치기(+=)
