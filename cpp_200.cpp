@@ -1,35 +1,25 @@
 ﻿#include <iostream>
-#include <string>
 
 using namespace std; 
 
-void Func1(int &arg) {
+void Func1(bool *is_on) {
 
-	cout << "변경 전 : " << arg << endl;
-	arg += 10;
-	cout << "변경 후 : " << arg << endl;
+	cout << "Call by address : " << sizeof(is_on) << endl;
 }
 
-void Func2(string& info) {
+void Func2(bool& is_on) {
 
-	info += "981년";
+	cout << "Call by reference : " << sizeof(is_on) << endl;
 }
 
 int main(int argc, char* argv[]) {
 
-	int year = 10;
+	bool is_tmp = true;
 
-	Func1(year);
-
-	cout << "Func1 함수 종료 후 : " << year << endl;
-
-	string king_info = "고려 성종 즉위년 : ";
-
-	Func2(king_info);
-
-	cout << king_info << endl;
+	Func1(&is_tmp);
+	Func2(is_tmp);
 
 	return 0;
 }
 
-// 075 - Call by Reference 이해하기
+// 076 - Call by Address 이해하기
