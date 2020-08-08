@@ -2,21 +2,28 @@
 
 using namespace std;
 
+enum Status {
+
+	normal = 0,
+	abnormal,
+	disconnect =100,
+	close
+};
+
 int main(int argc, char* argv[]) {
 
-	int number1 = 10;
-	int number2 = 20;
+	Status number = close;
 
-	int const* ptr1;
-	ptr1 = &number1;
-	//ptr1 = number1;
-	ptr1 = &number2;
-
-	int* const ptr2 = &number1;
-	*ptr2 = number2;
-	//*ptr2 = &number2;
+	if (number == Status::normal)
+		cout << "Status : normal" << endl;
+	else if (number == abnormal)
+		cout << "Status : abnormal" << endl;
+	else if (number == 101)
+		cout << "Status : disconnect" << endl;
+	else
+		cout << "Status : close" << endl;
 
 	return 0;
 }
 
-// 078 - const 포인터 이해하기
+// 079 - enum 이해하기
