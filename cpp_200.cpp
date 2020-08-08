@@ -1,20 +1,37 @@
 ﻿#include <iostream>
-#include<string>
+#include<sstream>
 
 using namespace std; 
 
 int main(int argc, char* argv[]) {
-	string str1 = "10";
-	string str2 = "2.4556";
-	string str3 = "456 문자열";
+	stringstream ss;
+
+	double number1 = 0.0;
+
+	ss << "1.2,2.6-3.8!4.7=8.9";
+
+	cout << "== string to double ==" << endl;
+	while (!ss.eof()) {
+		ss >> number1;
+		ss.ignore();
+
+		cout << number1 << ", ";
+	}
+		ss.clear();
+		ss.str("");
+		ss << "1," << "2" << 3 << " " << 4;
+		int number2 = 0;
+
+		cout << endl << "== string to int ==" << endl;
+		while (!ss.eof()) {
+			ss >> number2;
+			ss.ignore();
+
+			cout << number2 << ", ";
+		}
 	
-	int num1 = stoi(str1);
-	int num2 = stoi(str2);
-	int num3 = stoi(str3);
-
-	cout << num1 << ", " << num2 << ", " << num3 << endl;
-
+	
 	return 0;
 }
 
-// 063 - 문자열을 정수로 변환하기(stoi)
+// 064 - 문자열을 숫자로 변환하기(stringstream)
