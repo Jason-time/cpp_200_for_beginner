@@ -2,27 +2,21 @@
 
 using namespace std; 
 
-extern int g_number = 100;
+void Func(int arg) {
 
-int Func1() {
-
-	return g_number++;
-
-}
-int Func2() {
-
-	return g_number++;
+	cout << "변경 전 : " << arg << endl;
+	arg += 10;
+	cout << "변경 후 : " << arg << endl;
 }
 
 int main(int argc, char* argv[]) {
 
-	int number = g_number++;
+	int year = 10;
 
-	cout << "메인 number : " << number << endl;
-	cout << "Func1 number : " << Func1() << endl;
-	cout << "Func2 number : " << Func2() << endl;
+	Func(year);
 
+	cout << "함수 종료 후 : " << year << endl;
 	return 0;
 }
 
-// 073 - 전역 변수 이해하기(extern)
+// 074 - Call by Vallue 이해하기
