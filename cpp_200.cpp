@@ -2,32 +2,27 @@
 
 using namespace std; 
 
-int Temp1(const int arg) {
-	int number = 20;
+extern int g_number = 100;
 
-	return number + 1;
+int Func1() {
+
+	return g_number++;
+
 }
+int Func2() {
 
-
-int Temp2(const int arg) {
-
-	int number = arg;
-
-	return number + 1;
+	return g_number++;
 }
 
 int main(int argc, char* argv[]) {
 
-	int number = 10;
+	int number = g_number++;
 
-	int rtn1 = Temp1(number);
-	int rtn2 = Temp2(number);
+	cout << "메인 number : " << number << endl;
+	cout << "Func1 number : " << Func1() << endl;
+	cout << "Func2 number : " << Func2() << endl;
 
-	cout << "메인 함수 number : " << number << endl;
-	cout << "Temp 함수 number : " << rtn1 << endl;
-	cout << "Temp 함수 number : " << rtn2 << endl;
-	
 	return 0;
 }
 
-// 072 - 지역 변수 이해하기
+// 073 - 전역 변수 이해하기(extern)
