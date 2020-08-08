@@ -1,23 +1,14 @@
 ﻿#include <iostream>
 #include<string>
-#include<vector>
 
 using namespace std; 
 
 int main(int argc, char* argv[]) {
-	string str1 = "I like coding";
-	string str2 = move(str1);
+	string sentence = "I like coding";
+	sentence.erase(remove(sentence.begin(), sentence.end(), ' '),sentence.end());
 
-	cout << "str1 : " << str1 << endl;
-	cout << "str2 : " << str2 << endl;
-
-	vector<int> v1 = { 1,2,3 };
-	vector<int> v2 = move(v1);
-
-	cout << "v1 size : " << v1.size() << endl;
-	cout << "v2 size : " << v2.size() << endl;
-
+	cout << sentence << endl;
 	return 0;
 }
 
-// 060 - 문자열 이동하기 ( move )
+// 061 - 문자열에서 특정 문자만 제거하기(erase, remove)
