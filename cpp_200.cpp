@@ -1,20 +1,27 @@
 ﻿#include <iostream>
+#include <string>
+#include <vector>
 
 using namespace std; 
 
+int PointerFunc(vector<string>* info) {
+
+	if (info->empty() == true)
+		return 0;
+	return sizeof(info);
+}
+
 int main(int argc, char* argv[]) {
-	int number1 = 10;
-	int* pointer1 = &number1;
+	vector<string> message;
+	message.push_back("고려 장군");
+	message.push_back("척준경!");
+	message.push_back("절친 이름은");
+	message.push_back("... 무엇일까");
 
-	double number2 = 23.4;
-	double* pointer2 = &number2;
+	cout << "포인터 인자 크기 : " << PointerFunc(&message) << endl;
+	cout << "원래 변수 크기 : " << sizeof(message) << endl;
 
-	cout << "number1 : " << number1 << " (size : " << sizeof(number1) << ")" << endl;
-	cout << "pointer1 : " << pointer1 << " (size : " << sizeof(pointer1) << ")" << endl;
-
-	cout << "number2 : " << number2 << " (size : " << sizeof(number2) << ")" << endl;
-	cout << "pointer2 : " << pointer2 << " (size : " << sizeof(pointer2) << ")" << endl;
 	return 0;
 }
 
-// 069 - 포인터 이해하기(*)
+// 070 - 포인터 변수 사용하기 
