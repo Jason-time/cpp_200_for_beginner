@@ -4,14 +4,17 @@
 using namespace std; 
 
 int main(int argc, char* argv[]) {
-	string sentence = "I like coding";
-	string find_str = "coding";
-	string replace_str = "history";
+	string str1 = "10";
+	string str2 = "2.4556";
+	string str3 = "456 문자열";
+	
+	int num1 = stoi(str1);
+	int num2 = stoi(str2);
+	int num3 = stoi(str3);
 
-	sentence.replace(sentence.find(find_str), find_str.length(), replace_str);
+	cout << num1 << ", " << num2 << ", " << num3 << endl;
 
-	cout << sentence << endl;
 	return 0;
 }
 
-// 062 - 문자열 일부 교체하기(replace)
+// 063 - 문자열을 정수로 변환하기(stoi)
