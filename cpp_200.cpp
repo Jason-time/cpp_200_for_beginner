@@ -1,19 +1,20 @@
 ﻿#include <iostream>
-#include <string>
 
 using namespace std; 
 
 int main(int argc, char* argv[]) {
 	int number1 = 10;
-	double number2 = 67.8;
+	int* pointer1 = &number1;
 
-	string no_str1 = to_string(number1);
-	string no_str2 = to_string(number2);
+	double number2 = 23.4;
+	double* pointer2 = &number2;
 
-	cout << "number1 : " << number1 << endl;
-	cout << "number2 : " << number2 << endl;
+	cout << "number1 : " << number1 << " (size : " << sizeof(number1) << ")" << endl;
+	cout << "pointer1 : " << pointer1 << " (size : " << sizeof(pointer1) << ")" << endl;
 
+	cout << "number2 : " << number2 << " (size : " << sizeof(number2) << ")" << endl;
+	cout << "pointer2 : " << pointer2 << " (size : " << sizeof(pointer2) << ")" << endl;
 	return 0;
 }
 
-// 067 - 숫자를 문자열로 변환하기 ( to_string )
+// 069 - 포인터 이해하기(*)
