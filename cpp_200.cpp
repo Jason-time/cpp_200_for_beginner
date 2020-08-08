@@ -2,26 +2,32 @@
 
 using namespace std; 
 
+int Temp1(const int arg) {
+	int number = 20;
+
+	return number + 1;
+}
+
+
+int Temp2(const int arg) {
+
+	int number = arg;
+
+	return number + 1;
+}
+
 int main(int argc, char* argv[]) {
 
-	const int kSize = 3;
+	int number = 10;
 
-	int numbers[kSize] = { 10,20,30 };
-	int* pointer1 = numbers;
+	int rtn1 = Temp1(number);
+	int rtn2 = Temp2(number);
 
-	int no1 = 1;
-	int no2 = 2;
-	int no3 = 3;
-	int* pointer2[kSize] = { &no1, &no2, &no3 };
-
-	for (int i = 0; i < kSize;i++)
-		cout << "Pointer1[" << i << "] = " << *(pointer1 + i) << endl;
-
-	for (int i = 0; i < kSize;i++)
-		cout << "Pointer2[" << i << "] = " << *pointer2[i]  << endl;
+	cout << "메인 함수 number : " << number << endl;
+	cout << "Temp 함수 number : " << rtn1 << endl;
+	cout << "Temp 함수 number : " << rtn2 << endl;
 	
-
 	return 0;
 }
 
-// 071 - 포인터 배열 사용하기
+// 072 - 지역 변수 이해하기
