@@ -1,25 +1,18 @@
 ﻿#include <iostream>
+#include <string>
 
-using namespace std; 
-
-void Func1(bool *is_on) {
-
-	cout << "Call by address : " << sizeof(is_on) << endl;
-}
-
-void Func2(bool& is_on) {
-
-	cout << "Call by reference : " << sizeof(is_on) << endl;
-}
+using namespace std;
 
 int main(int argc, char* argv[]) {
 
-	bool is_tmp = true;
+	const string kMyJob = "developer";
 
-	Func1(&is_tmp);
-	Func2(is_tmp);
+	string question = "who are you : ";
+	string answer = "my job is :";
 
+	cout << question << kMyJob << endl;
+	cout << answer << kMyJob << endl;
 	return 0;
 }
 
-// 076 - Call by Address 이해하기
+// 077 - const 변수 이해하기
