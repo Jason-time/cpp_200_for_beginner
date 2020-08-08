@@ -1,18 +1,22 @@
 ﻿#include <iostream>
-#include <string>
 
 using namespace std;
 
 int main(int argc, char* argv[]) {
 
-	const string kMyJob = "developer";
+	int number1 = 10;
+	int number2 = 20;
 
-	string question = "who are you : ";
-	string answer = "my job is :";
+	int const* ptr1;
+	ptr1 = &number1;
+	//ptr1 = number1;
+	ptr1 = &number2;
 
-	cout << question << kMyJob << endl;
-	cout << answer << kMyJob << endl;
+	int* const ptr2 = &number1;
+	*ptr2 = number2;
+	//*ptr2 = &number2;
+
 	return 0;
 }
 
-// 077 - const 변수 이해하기
+// 078 - const 포인터 이해하기
